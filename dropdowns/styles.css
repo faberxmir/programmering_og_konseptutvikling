@@ -8,19 +8,21 @@
 */
 
 .navbar {
-  width: 100%;
   background-color: #E27C46;
   height: 60px;
+  min-width: 650px;
 }
 
-.navbar ul {
-  margin-left: 20%;
-}
 .navbar ul, li, a {
-  display: inline-block;
   height: 100%;
   vertical-align: top;
   margin-top: 0;
+}
+.navbar ul {
+  float: left;
+}
+.navbar li, a {
+  display: inline-block;
 }
 
 .navbar li {
@@ -35,15 +37,12 @@
   text-decoration: none;
   color:  #347B98 ;
   font-size: 1.6em;
-  font-weight: bolder;
   margin-top: 15px;
   font-family: fantasy;
   padding: 0 10px;
 }
 
 .container {
-  float: right;
-  margin-right: 20%;
   margin-top: 5px;
 }
 
@@ -59,7 +58,7 @@
 }
 
 .dropdown {
-  position: relative;
+  float: right;
   display: inline-block;
   height: 100%;
 }
@@ -89,4 +88,10 @@
 
 .dropdown:hover .dropdown-content{
   display: block;
+}
+
+.contentCenterFunction {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
 }
