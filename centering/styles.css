@@ -1,0 +1,90 @@
+.bodyWrapper {
+  position: relative;
+  background-color: lightgray;
+  color: #04323d;
+  padding: 0 0;
+  width: 70%;
+  min-height: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.textWrapper {
+  padding: 10px 50px;
+}
+.navBarLow {
+  position: absolute;
+  bottom: 0;
+  background-color: darkgray;
+  text-align: center;
+  width: 100%;
+}
+
+.navBarLow:hover a{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+h1 {
+color: #04323d;
+}
+
+.centerH1 h1{
+  text-align: center;
+}
+
+.rightH1 h1{
+  text-align: right;
+}
+.codefileview{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  white-space: nowrap;
+  padding: 0;
+}
+.css {
+  display: inline-block;
+  background-color: black;
+  color: grey;
+  height: 300px;
+  padding:5px;
+  border: 0;
+  width:50%;
+}
+
+.imgCenter {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+.html {
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  color: blue;
+  height: 300px;
+  padding: 5px;
+  width: 50%;
+  border: 0;
+}
+
+.html em{
+  color: pink;
+}
+
+.css h1 {
+  color: white;
+}
+.css em{
+  color: orange;
+}
+
+.htmlFileText {
+  color: green;
+}
+
+.htmlAttributeText {
+  color: #f23ae6;
+}

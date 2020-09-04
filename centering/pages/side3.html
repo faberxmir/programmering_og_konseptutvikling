@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Sentrering av bilde</title>
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <div class="textWrapper">
+        <h1>Sentrering av bilder</h1>
+        <p>
+          Sentrering av bilder er mer komplisert enn sentrering av tekst. For å sentrere bilder er det nødvendig å bruke både
+          div'er, img taggen og tilhørende attributter på en klok måte.<br>
+          Den vanligste teknikken for å sentrere bilder, og den teknikken som blir anbefalt av W3Schools, går ut på at du lager en
+          klasse som du kan angi i img tag'en og som kontrollerer høyre margin, venstre margin, display attributtet og bredden.
+        </p>
+        <div class="codefileview">
+          <div class="css">
+            <h1>[styles.css]</h1>
+            .centerImageClass {<br>
+              &nbsp display: <em>block;</em><br>
+              &nbsp margin-left: <em>auto;</em><br>
+              &nbsp margin-right: <em>auto;</em><br>
+              &nbsp width: <em>50%;</em><br>
+            }
+          </div>
+          <div class="html">
+            <h1>[bildeSide.html]</h1>
+            ...<br>
+            &ltbody&gt<br>
+            &nbsp &nbsp &ltdiv <span class="htmlAttributeText"> class= </span> <span class="htmlFileText">"bodyWrapper"</span> &gt <br>
+            &nbsp &nbsp &nbsp &nbsp &ltimg <span class="htmlAttributeText">src=</span> <span class="htmlFileText"> "../images/lama.jpg</span>"
+            &nbsp &nbsp<span class="htmlAttributeText"> class=</span> <span class="htmlFileText">"centerImageClass"</span>&gt <br>
+            &nbsp &nbsp&lt/div&gt<br>
+            &lt/body&gt
+            <br><br>
+            <span class="htmlFileText"> &lt!-- Du kan se resultatet på neste side! --> </span>
+          </div>
+        </div>
+      </div>
+      <div class="navBarLow">
+        <a href="side2.html"> <= Tilbake </a> &nbsp &nbsp | &nbsp &nbsp <a href="side4.html"> Neste => </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+
+/*
+  #EBF7E3
+  #9BD770
+  #66B032
+  #375F1B
+  #1B3409
+*/
+
+.navbar {
+  background-color: #1B3409;
+  position: sticky;
+  top: 0;
+  padding-left: 10%;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 50px;
+}
+
+.navbarActive li {
+  background-color: #375F1B;
+}
+
+.navbar li:hover {
+  background-color:#9BD770;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.navbar ul a:hover{
+  color: #375F1B;
+  font-weight: bold;
+}
+
+.linkExample ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+.linkExample li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.counterIntuitiveLink a {
+  text-decoration: none;
+  color: #1B3409;
+}
+.paragraph {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 10px 20px 20px;
+  background-color:#EBF7E3;
+  border-radius: 3px;
+}
+
+.paragraph h1 {
+  color: #375F1B;
+}
+
+.paragraph hr {
+  border-top: 3px solid #375F1B;
+}
+body {
+  background-color: #9BD770;
+}
+
+/* CSS Artistry */
+.imageLeftTextRightContainer {
+  width: 100%;
+}
+
+.paragraphSection {
+  max-width: 70%;
+  padding-top: 5px;
+  display: inline-block;
+  height: auto;
+  color: #1B3409;
+  padding: 0px 10px;
+}
+
+.rowContainer {
+  display: inline-block;
+  width: 24%;
+  height: 110px;
+  border-color: #66B032;
+  text-align: center;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.row1{
+  display: block;
+  background-color: #EBF7E3;
+  height: 20%;
+  color: #66B032;
+}
+
+.row2{
+  display: block;
+  background-color: #9BD770;
+  height: 20%;
+  color: #375F1B;
+}
+
+.row3{
+  display: block;
+  background-color: #66B032;
+  height: 20%;
+  color: #1B3409;
+}
+
+.row4{
+  display: block;
+  background-color: #375F1B;
+  height: 20%;
+  color:#EBF7E3;
+}
+
+.row5{
+  display: block;
+  background-color: #1B3409;
+  height: 20%;
+  color:#9BD770;
+}
+
+.layoutDemoContainer {
+  display: inline-block;
+  margin: 10px auto;
+  height: 150px;
+  width: 24%;
+  max-width: 300px;
+  vertical-align: top;
+  background-color: #9BD770;
+}
+
+.doubleDemo1 {
+  width: 50%;
+  float: left;
+  height: 50%;
+  background-color: #375F1B;
+}
+
+.doubleDemo2 {
+  width: 50%;
+  display: inline-block;
+  background-color: #66B032;
+  height: 50%;
+}
+
+.wideImage {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding-top: 1%;
+}
+
+.twoColumnImage {
+  display: inline-block;
+  height: 600px;
+  margin: 20px auto;
+  padding: 0 40px;
+}
+
+.threeColumnImage {
+  display: inline-block;
+  width:  25%;
+  margin: 20px auto;
+  padding: 0 3%;
+}
+
+.layoutDemoDouble {
+  width: 90%;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0px auto;
+  text-align: center;
+}
