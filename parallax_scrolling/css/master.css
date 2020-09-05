@@ -1,0 +1,43 @@
+
+body, html {
+  height: 2000px;
+}
+
+.main {
+    background-image: url("../images/theRock.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    background-color: green;
+}
+
+.parallax {
+  background-image: url("../images/yellowStone.jpg");
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax p {
+  position: relative;
+  top: 50%;;
+}
+
+.statement {
+  background-color: #D4EDF7;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: red;
+  font-family: fantasy;
+  font-size: 1.4em;
+  padding-top: 1px;
+}
+
+h1 {
+  color: red;
+}
