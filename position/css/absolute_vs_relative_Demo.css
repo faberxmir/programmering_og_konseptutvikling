@@ -1,0 +1,96 @@
+
+:root{
+
+  --main-bg-color: #EFE257;  /*dirty-yellow*/
+  --secondary-bg-color: #FEFEFB;/*eggshell white*/
+  --main-txt-color: #24350E;  /*dirty brown*/
+  --low-contrast-txt-color: #CADB59; /*dirty green*/
+  --fresh-txt-color: #8AC048;/*almost fresh green*/
+
+  /*
+  #FEFEFB
+  #EFE257
+  #CADB59
+  #8AC048
+  #24350E
+  */
+}
+
+.centering_wrapper {
+    display: block;
+    position: relative;
+    top: 5%;
+    width: 80%;
+    margin: 20px auto;
+    padding: 2%;
+    border-style: groove;
+}
+
+.centering_wrapper p,
+.centering_wrapper h1{
+    margin: 1% 2%;
+}
+
+.card1,
+.card2,
+.card3 {
+  min-height: 400px;
+  width: 30%;
+  margin: 10px 1%;
+  vertical-align: top;
+}
+
+.card1,
+.card2,
+.card3,
+.wide_card {
+  display: inline-block;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card1,
+.card2,
+.wide_card {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+.card3 {
+  background-color: var(--main-txt-color);
+  color: var(--fresh-txt-color);
+}
+.wide_card{
+  min-height: 200px;
+  margin: 1%;
+  width: 95%;
+}
+
+.wide_card p,
+.wide_card h1 {
+}
+
+.card1:hover{
+  position: relative;
+  top: 450px;
+  left: 50px;
+}
+
+.card2:hover {
+  position: absolute;
+  top: 450px;
+  left: 50px;
+}
+
+.navbar {
+  background-color: var(--main-txt-color);
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar a {
+  color: var(--fresh-txt-color);
+  text-decoration: none;
+  font-size: 3em;
+}

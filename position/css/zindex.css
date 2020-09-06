@@ -1,0 +1,107 @@
+:root{
+
+  --main-bg-color: #EFE257;  /*dirty-yellow*/
+  --secondary-bg-color: #FEFEFB;/*eggshell white*/
+  --main-txt-color: #24350E;  /*dirty brown*/
+  --low-contrast-txt-color: #CADB59; /*dirty green*/
+  --fresh-txt-color: #8AC048;/*almost fresh green*/
+
+  --top-margin: 100px;
+  /*
+  #FEFEFB
+  #EFE257
+  #CADB59
+  #8AC048
+  #24350E
+  */
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: 0px 20px;
+  padding-bottom: 5px;
+  margin: var(--top-margin) 0px;
+  box-shadow: 10px 10px 10px 10px;
+  min-height: 200px;
+  font-size: 1.4em;
+}
+
+.heading {
+  /* bør være 50px høy for at dette skal virke */
+
+  display: block;
+  width: 100%;
+  font-family: fantasy;
+  padding: 20px;
+  height: 40px;
+  font-size: 1.6em;
+}
+
+.card1 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: var(--top-margin);
+}
+
+.card2 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: 220px;
+  z-index: 3;
+}
+
+.card3 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: 160px;
+  z-index: 2;
+}
+
+.card4 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: 280px;
+  z-index: 4;
+}
+
+.card5 {
+  position: --webkit-sticky; /* Safari */
+  position: relative;
+  z-index: 5;
+}
+
+.card6 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: 40px;
+  z-index: -1;
+}
+.card7 {
+  position: --webkit-sticky; /* Safari */
+  position: sticky;
+  top: 50px;
+  z-index: 6;
+  height: 500px;
+}
+
+.incardNav {
+  width: 100%;
+  position: relative;
+  height: 40px;
+  top: 450px;
+  text-align: center;
+  background-color: #FEFEFB;
+}
+
+.incardNav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #8AC048;
+}

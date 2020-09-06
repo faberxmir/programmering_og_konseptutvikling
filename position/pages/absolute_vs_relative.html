@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/absolute_vs_relative_Demo.css">
+  </head>
+  <body>
+      <div class="centering_wrapper">
+      <div class="card1">
+        <h1>Kort1</h1>
+        <p>Position: relative; <br>
+          left: 50px;
+          top: 50px;
+        </p>
+        <hr>
+        <p>
+          <h1>onHover</h1>
+          <p>
+          Kortet skal flytte seg 50 pixler til høyre, og 450 pixler ned.
+          Den gamle posijonen til kortet blir stående tom, og ingen andre
+          kort skal flytte på seg.
+        </p>
+      </div>
+        <div class="card2">
+
+          <h1>Kort2</h1>
+          <p>Position: absolute; <br>
+            left: 50px;
+            top: 50px;
+          </p>
+          <hr>
+          <h1>onHover</h1>
+          <p>
+          kortet skal flytte seg 50 pixler til høyre, og 450 pixler ned.
+          De andre kortene skal flytte seg til venstre. Fordi positionen
+          blir endret til absolute går kortet ut av dokumentflyten, og de
+          andre kortene vil fylle den tomme plassen.
+          </p>
+
+        </div>
+        <div class="card3">
+          <h1>Demonstrasjon</h1>
+          <p>De tre kortene demonstrerer forskjellen på absolute og relative postion.
+          bruke musepekeren for å se forskjellen på de tre kortene. Akkurat nå er de
+          inordnet som inline-block med en gitt bredde og marginer for å positionere
+          seg likt, men når du drar musen over dem vil de endre posisjon iht
+          Det som står på kortet</p>
+          <hr><br>
+        </div>
+        <div class="wide_card">
+          <h1>Position: Absolute vs Relative</h1>
+          <p>
+            Absolute og Relative posisjonering kan i utgangpunktet virke ganske likt..<br>
+            For å demonstrere forskjellen kan du bruken musen og "hover" over kort 1 og kort 2.
+            Når du gjør det vil kortene sitt position attributt bli endret slik at de samsvarer
+            med det som står på kortet. Samtidig blir attributtene left og top endret til respektive
+            50px og 450px.<br><br>
+            Legg merke til at begge kortene havner nesten på samme stedet på tross av at de begge får beskjed
+            om å flytte seg 50px til høyre og 450px ned. Dette skjer fordi kort 2 flytter seg i forhold
+            til boksen som alle kortene står inne i, mens kort 1 flytter seg i forhold til seg selv.<br>
+            Hvis du ser nøye etter vil du set at kort 1 flytter seg lengre til høyre. Det skjer fordi Kortene
+            har en margin rundt seg, og den påvirker posisjonen til kort 1, men ikke til kort 2.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="../index.html">HOME</a>
+    </div>
+</html>

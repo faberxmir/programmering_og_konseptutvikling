@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/zindex.css">
+  </head>
+  <body>
+    <div class="card1">
+      <span class="heading">z-index: 1</span>
+      Denne klassen har fått satt attributtet z-index til 1<br>
+      z-index: 1;
+    </div>
+    <div class="card2">
+      <span class="heading">z-index: 3</span>
+      Dette kortet har fått satt attributtet z-index til 3<br>
+      z-index: 3;<br><hr>
+      Det betyr at dette kortet skal bevege <em> OVER </em> alle
+      kort som har lavere z-index
+    </div>
+    <div class="card3">
+      <span class="heading">z-index: 2</span>
+      Dette kortet har fått satt attributtet z-index til 2<br>
+      z-index: 2;<br><hr>
+      Det betyr at dette kortet skal bevege <em> OVER </em> alle
+      kort som har lavere z-index, og <em>UNDER</em> alle kort
+      som har høyere z-index
+    </div>
+    <div class="card6">
+      <span class="heading">z-index: -1</span>
+      Denne klassen har fått satt attributtet z-index til -1<br>
+      z-index: -1;<br><hr>
+      Det er den laveste z-index'en i denne kortstokken, og da skal dette
+      kortet gå UNDER alle de andre kortene
+    </div>
+    <div class="card4">
+      <span class="heading">z-index: 4</span>
+      Denne klassen har fått satt attributtet z-index til 1<br>
+      z-index: 4;
+    </div>
+    <div class="card5">
+      <span class="heading">z-index: 5</span>
+      Denne klassen har fått satt attributtet z-index til 5<br>
+      z-index: 5; <br><hr>
+      Det er den høyeste z-index'en i denne kortstokken, og da skal den gå
+      <em>OVER</em> alle de andre kortene
+    </div>
+    <div class="card7">
+      <div class="incardNav">
+        <a href="../index.html">HOME</a>
+      </div>
+      <span class="heading">Forstår du hvordan dette virker?</span>
+      klasser med høyere z-index blir liggende OVER diver med lavere z-index.
+      Dette er et viktig attributt når du lager navigasjonselementer. Bruk
+      z-indexen for å sikre at elementene du bruker ligger over standardelementene
+      på siden. Scroll litt opp og ned og observer hva som hender. Legg merke til
+      z-index'en som står på alle kortene. <br><hr>
+      Hvilken z-index har dette kortet?
+    </div>
+  </body>
+</html>

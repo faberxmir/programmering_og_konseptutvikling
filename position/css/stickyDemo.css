@@ -1,0 +1,101 @@
+:root{
+
+  --main-bg-color: #EFE257;  /*dirty-yellow*/
+  --secondary-bg-color: #FEFEFB;/*eggshell white*/
+  --main-txt-color: #24350E;  /*dirty brown*/
+  --low-contrast-txt-color: #CADB59; /*dirty green*/
+  --fresh-txt-color: #8AC048;/*almost fresh green*/
+
+  --top-margin: 100px;
+  /*
+  #FEFEFB
+  #EFE257
+  #CADB59
+  #8AC048
+  #24350E
+  */
+}
+
+body{
+  height: 4000px;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7 {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: 0px 20px;
+  padding-bottom: 5px;
+  margin: var(--top-margin) 0px;
+  box-shadow: 10px 10px 10px 10px;
+  min-height: 200px;
+  font-size: 1.4em;
+}
+
+.bigWhiteDiv{
+  height: 1000px;
+  width: 100%;
+}
+
+.card1 {
+  position: fixed;
+  top: 200px;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.card1FlyingText {
+  position: absolute;
+  left: 15%;
+  top:250px;
+  width: 80%;
+  max-height: 150px;
+  z-index: 2;
+  font-size: 1.9em;
+}
+
+.stickyText {
+  position: --webkit-sticky;
+  position: sticky;
+  top: 250px;
+  width: 60%;
+  left: 12%;
+  font-size: 1.4em;
+}
+
+.stickyImg {
+  position: --webkit-sticky;
+  position: sticky;
+  top: 220px;
+  left: 80%;
+  height: 200px;
+  width: 200px;
+  z-index: 5;
+}
+
+.incardNav {
+  position: --webkit-sticky;
+  position: sticky;
+  top: 400px;
+  width: 80%;
+  height: 40px;
+  left: 11%;
+  text-align: center;
+  background-color: #FEFEFB;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.incardNav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #8AC048;
+  font-size: 1.8em;
+}

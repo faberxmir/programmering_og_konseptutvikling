@@ -1,0 +1,91 @@
+
+:root{
+
+  --main-bg-color: #EFE257;  /*dirty-yellow*/
+  --secondary-bg-color: #FEFEFB;/*eggshell white*/
+  --main-txt-color: #24350E;  /*dirty brown*/
+  --low-contrast-txt-color: #CADB59; /*dirty green*/
+  --fresh-txt-color: #8AC048;/*almost fresh green*/
+
+  /*
+  #FEFEFB
+  #EFE257
+  #CADB59
+  #8AC048
+  #24350E
+  */
+}
+
+body {
+  height: 3000px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.staticClass,
+.fixedClass,
+.relativeClass,
+.stickyClass,
+.absoluteClass {
+  display: block;
+  margin: 50px auto;
+  padding: 5px 10px;
+  border: 0;
+  background-color: var(--main-bg-color);
+  font-size: 1.2em;
+}
+.staticClass,
+.fixedClass,
+.relativeClass,
+.stickyClass,
+.absoluteClass:hover {
+  cursor: pointer;
+}
+.staticClass,
+.relativeClass,
+.stickyClass,
+.absoluteClass {
+  box-shadow: 5px 10px 10px rgba(36, 52, 14, 0.5);
+}
+
+.staticClass {
+  z-index: 1;
+}
+
+.fixedClass {
+}
+
+.relativeClass {
+}
+
+.absoluteClass {
+}
+
+.stickyClass {
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--fresh-txt-color);
+  color: var(--secondary-bg-color);
+  height: 60px;
+}
+
+.navbarHeading {
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+  font-style: oblique;
+  font-family: fantasy;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-txt-color);
+}

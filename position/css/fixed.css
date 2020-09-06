@@ -1,0 +1,82 @@
+:root{
+
+  --main-bg-color: #EFE257;  /*dirty-yellow*/
+  --secondary-bg-color: #FEFEFB;/*eggshell white*/
+  --main-txt-color: #24350E;  /*dirty brown*/
+  --low-contrast-txt-color: #CADB59; /*dirty green*/
+  --fresh-txt-color: #8AC048;/*almost fresh green*/
+
+  /*
+  #FEFEFB
+  #EFE257
+  #CADB59
+  #8AC048
+  #24350E
+  */
+}
+
+.text  {
+  display: block;
+  width: 70%;
+  margin: 80px auto;
+  padding: 5px 40px;
+  border: 0;
+  background-color: var(--main-txt-color);
+  font-size: 1.5em;
+  color: var(--secondary-bg-color);
+}
+
+.heading {
+  display: block;
+  margin: 10px 20px;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--fresh-txt-color);
+}
+
+b {
+  font-size: 1.8em;
+  color: var(--fresh-txt-color);
+}
+
+.fixedImage {
+  display: block;
+  position: relative;
+  transform: rotate(180deg);
+  width: 100%;
+}
+
+.fixed_heading,
+.fixed{
+  position: fixed;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family:monospace;
+}
+
+.fixed_heading {
+  top: 5px;
+  left: 5%;
+  padding: 0 20px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: -5px 10px 5px rgba(218,227,98,0.2);
+}
+
+.fixed{
+  right: 5%;
+  top: 55%;
+  width: 10%;
+}
+.fixedTextBG {
+    background-color: var(--main-bg-color);
+    margin-top: 20px;
+    padding-bottom: 15px;
+    color: var(--main-txt-color);
+    box-shadow: -5px 10px 5px rgba(218,227,98,0.2);
+}
+.fixed a {
+  font-size: 2em;
+  color: var(--fresh-txt-color);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/master.css">
+    <meta charset="utf-8">
+    <title>Position Elements</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <span class="navbarHeading">navigasjonselementer er vanligvis sticky-icky=> </span>
+    </div>
+    <div class="staticClass">
+      <h1> position: static</h1>
+
+        Elementer som har <em>position: static</em> følger normal flyt i dokumentet. Det betyr at de ikke er under
+        påvirkning av attributtene <em>top: left: bottom: right:</em> Dette betyr at de oppfører seg i henhold til
+        verdien som er satt i <em>display attributtet</em>. Husker du hvordan det virker? <em>display: block,
+        display: inline-block, display: inline, display: none</em><br><hr>
+        hvis du er i tvil om hvordan display attributtet virker kan du lese mer om det her:
+        <a href="https://www.w3schools.com/cssref/pr_class_display.asp">w3schools</a>
+
+    </div>
+    <a href="pages/fixed.html">
+      <div class="fixedClass">
+        <h1>position: fixed</h1>
+
+        Elementer som har <em>position: fixed</em> er ubevegelige og holder den position som er angitt av <em>
+        top: bottom: left: right</em> eller en kombinasjon av disse. Du kan bruke kombinasjonene for å angi størrelse
+        på elementet, men om du setter alle attributtene (<em>top, bottom, left, right</em>) så kan du komme i
+        konflikt med verdier du har satt på andre attributter, som for eksempel <em>width og height</em><br>
+        Disse elementene vil ikke scrolle sammen med de andre elementene, og det er et enkelt attributt å forstå fordi
+        attributtet er upåvirket og overstyrer de fleste andre attributter. Du bruker dette attributtet når du vil
+        fiksere et attributt på et spesifikt sted i dokumentet.
+        <br><hr>
+        Du kan lese mer om width og height på <a href="https://www.w3schools.com/css/css_dimension.asp">W3Schools</a>
+
+      </div>
+    </a>
+    <a href="pages/absolute_vs_relative.html">
+      <div class="relativeClass">
+        <h1>position: relative</h1>
+          Elementer som har <em>position: relative</em> Får sin plassering satt i forhold til et annet element. Det betyr
+          at hvis et element, en div for eksempel er <em>position: fixed</em>, og et annet element er satt inne i den div'en
+          så vil elementet som er relativt ligge oppe på venstre hjørne i elementet som er fixed hvis posisjon er satt til top: 0, left: 0
+          fordi det betyr at elementet er forskjøvet 0 pixler fra toppen, og 0 pixler fra venstre. Dette er vanlig å bruke på
+          gardinmenyer, eller drop-downmenus som de heter på engelsk.<hr>
+          Merk at alle elementer har en posisjon angitt, selv om den ikke er eksplisitt i din egen HTML/CSS. Som et minimum har
+          de en plassering i forhold til &ltbody&gt tag'en
+      </div>
+    </a>
+    <a href="pages/absolute_vs_relative.html">
+      <div class="absoluteClass">
+        <h1>position: absolute</h1>
+        elementer som har <em>postion: absolute</em> blir posisjonert i forhold til sin nærmeste posisjonerte forfar, i henhold
+        til arvereglene. Hvis det ikke finnes posisjonerte elementer i arverekkefølgen, så forholder den seg til &ltbody&gt sin
+        posisjon og følger scrollingen.
+      </div>
+    </a>
+
+    <a href="pages/sticky.html">
+      <div class="stickyClass">
+        <h1>position: sticky</h1>
+        Elementer som har <em>position: sticky</em> bytter faktisk mellom <em>position: relative og position: fixed</em>.
+        Elementet vil være relativt til sin utgangsposisjon, så vil de flytte seg til et av attributtene <em>top: bottom:
+        left: rigth:</em> møtes. Da vil den bli "sticky" og sette seg fast. Dette er ganske vanlig å bruke på
+        navigasjonselementer/navbar.
+      </div>
+    </a>
+
+    <a href="pages/zindex.html">
+      <div class="staticClass" >
+        <h1>z-index</h1>
+        Alle positionene vi har snakket om så langt er 2-dimensjonale fra det kartesiske koordinatsystemet, men fra tid
+        til annen vil du ha behov for at elementer overlapper hverandre, altså har vi mulighet til å bruke en z-akse også,
+        eller <em>stack order</em> som det heter i HTML/CSS. Du kan bruke <em>z-index: 1</em> eller et annet tall for å angi
+        hvilke elementer som skal ligge over eller under hverandre. Elementer med høyere z-index blir liggende over tall
+        med lavere z-index
+      </div>
+    </a>
+  </body>
+</html>
