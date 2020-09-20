@@ -1,0 +1,108 @@
+:root {
+  --carolina: #279AF1; /*=> 39, 154, 241 => Carolina Blue (light blue)*/
+  --blackCoral: #60656F; /*=> Black Coral (bluish grey)*/
+  --smoky: #131112; /*=> Smokey Black (charcoal?)*/
+  --cream: #F0F4EF; /*=> Baby Powder (cream)*/
+  --hotpink: #F865B0; /*=> Hot Pink*/
+}
+
+@font-face {
+  font-family: 'tits';
+  src: url('fonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('fonts/titilliumweb-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  height: 2160px;
+  text-align: center;
+  background-color: var(--carolina);
+}
+
+.main {
+  background-color: var(--carolina);
+  height: 50%;
+}
+
+.background {
+  background-image: url("../images/trekant.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+.nametag,
+.cryout,
+.fix,
+.stickyname {
+  font-family: tits;
+  color: var(--blackCoral);
+}
+.nametag {
+  width: 80%;
+  top: 20%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--smoky);
+  font-size: 4em;
+}
+.fix,
+.stickyname {
+  display: inline-block;
+  margin: 0 0;
+  padding: 0 0;
+  font-size: 4em;
+  text-shadow: 4px 4px 5px var(--smoky);
+}
+
+.nonstickyname {
+  font-family: tits;
+  font-size: 4em;
+  color: var(--hotpink);
+  text-shadow: 4px 4px 5px var(--smoky);
+}
+.stickyname {
+  position: sticky;
+  top: 5%;
+}
+
+.cryout{
+  position: sticky;
+  text-align: left;
+  top:90%;
+  margin-left: 5%;
+  font-size: 2em;
+  color: var(--cream);
+  text-shadow: 2px 0px 3px var(--cream);
+}
+
+/* http://waitanimate.wstone.io/#!/ */
+.shake {
+  font-family: tits;
+  font-size: 2em;
+  margin: 50px;
+  color: var(--hotpink);
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%;
+  text-shadow: 4px 4px 5px var(--smoky);
+}
+.element {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background: red;
+}
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}

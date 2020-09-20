@@ -17,9 +17,7 @@
 }
 
 body {
-  height: 3000px;
-  padding-left: 20%;
-  padding-right: 20%;
+  background-color: var(--secondary-bg-color);
 }
 
 .staticClass,
@@ -33,6 +31,7 @@ body {
   border: 0;
   background-color: var(--main-bg-color);
   font-size: 1.2em;
+  width: 60ch;
 }
 .staticClass,
 .fixedClass,
@@ -72,7 +71,7 @@ body {
   top: 0;
   background-color: var(--fresh-txt-color);
   color: var(--secondary-bg-color);
-  height: 60px;
+  width: 100%;
 }
 
 .navbarHeading {
@@ -85,7 +84,21 @@ body {
   text-align: center;
 }
 
-a {
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+.navbar a {
+  display: block;
   text-decoration: none;
   color: var(--main-txt-color);
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.navbar a:hover{
+  background-color: blue;
 }

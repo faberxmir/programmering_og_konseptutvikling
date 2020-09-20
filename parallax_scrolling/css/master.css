@@ -5,16 +5,15 @@ body, html {
 
 .main {
     background-image: url("../images/theRock.jpg");
-    height: 100%;
+    height:  50%;
     background-size: cover;
     background-position: center;
-    height: 50%;
     background-color: green;
 }
 
 .parallax {
   background-image: url("../images/yellowStone.jpg");
-  height: 500px;
+  height: 50%;
 
   background-attachment: fixed;
   background-position: center;
