@@ -1,0 +1,29 @@
+:root {
+  --maintext: #d4f7d4;
+  --grassgreen: #559e54;
+  --mattblue: #236ab9;
+  --freshblue: #183bf0;
+  --blueblack: #091034;
+}
+
+html {
+  background-color: var(--maintext);
+}
+
+.flexboxcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--mattblue);
+}
+
+.flexboxcontainer > div {
+  background-color: var(--blueblack);
+  font-size: 30px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  padding: 30px;
+  color: var(--maintext);
+}
