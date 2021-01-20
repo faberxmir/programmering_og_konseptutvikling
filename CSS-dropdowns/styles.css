@@ -59,7 +59,7 @@
 
 .dropdown {
   float: right;
-  display: inline-block;
+  /*display: inline-block;*/
   height: 100%;
 }
 
