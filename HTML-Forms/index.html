@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a number!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form onsubmit="guess(); return false">
+        <h1>Guess a number between <span class="rangeSpan">0-100</span></h1>
+        <input type="text" class="userinput" id="userinput" required>
+        <p id="feedback" class="feedback">..make your guess</p>
+    </form>
+
+    <h1> Press any letter to restart the game!</h1>
+    <script src="indexscript.js"></script>
+</body>
+</html>

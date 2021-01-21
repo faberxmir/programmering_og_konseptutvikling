@@ -1,0 +1,26 @@
+
+
+nav {
+  display: block;
+  width: 100%;
+}
+
+ul{
+  padding: 5px 10px;
+  font-size: 1.2em;
+  font-family: fantasy;
+}
+
+nav li{
+
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav li:last-child{
+  float: right;
+}
+
+nav a{
+  text-decoration: none;
+}
