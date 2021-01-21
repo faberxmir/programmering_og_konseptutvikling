@@ -1,4 +1,11 @@
 
+function printArray(array1){
+  array1.forEach((item, i) => {
+    console.log(item);
+  });
+
+
+}
 
 
 function sortArray(array1){
@@ -9,9 +16,9 @@ function sortArray(array1){
       //console.log("--------------------------");
         for(var x = 0; x < array1.length; ++x){
           var temp = array1[i];
-          if(temp > array[x]){
-            array[i] = array[x];
-            array[x] = temp;
+          if(temp > array1[x]){
+            array1[i] = array1[x];
+            array1[x] = temp;
           }
           //console.log("loop2: runde: " + x);
         }
@@ -19,4 +26,6 @@ function sortArray(array1){
     }
   }
 }
-sortArray([1,2,3]);
+var array = [4,4,6,8,6,5]
+sortArray(array);
+printArray(array);

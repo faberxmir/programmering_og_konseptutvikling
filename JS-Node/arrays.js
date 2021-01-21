@@ -12,9 +12,7 @@ function printList(txtListe){
           console.log(arrNavneListe[index]);
           ++index;
       }
-
-
-
   }
 }
+
 printList(arrNavneListe);
